@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-
-    <link rel="stylesheet" href="Css/styles.css">
-</head>
-<body>
+     <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/styles.css" />
+  </head>
+  <body>
     <form>
-        
-        <div class="container">
-            <h1>Submission Form</h1>
-            <span><label for="firstName">First Name:</label></span>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" class="align">
-            <span><label for="lastName">Last Name:</label></span>
-            <input type="text" id="lastName" name="lastName" placeholder="Family Name" class="align">
+      <div class="container">
+        <i class="fa-brands fa-wpforms"></i>
+        <h1>Submission Form</h1> 
+        <span><label for="firstName">First Name:</label></span>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="First Name"
+          class="align"
+        />
+        <span><label for="lastName">Last Name:</label></span>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Family Name"
+          class="align"
+        />
 
-            
-            <span><label for="password">Password:</label></span>
-            <input type="password" id="password" name="password" placeholder="**********" class="align">
-            <span><label for="email">Email:</label></span>
-            <input type="email" id="email" name="email" placeholder="admin@gmail.com" class="align">
-            
-            <fieldset>
-                <legend><strong>Educational Information</strong></legend>
-                 <h5>Current academic year</h5>
-                
-                <input type="radio" id="fresh" name="year">
-                <label for="fresh">Freshman</label>
+        <span><label for="password">Password:</label></span>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="**********"
+          class="align"
+        />
+        <span><label for="email">Email:</label></span>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="admin@gmail.com"
+          class="align"
+        />
 
-                
-                <input type="radio" id="sopho" name="year">
-                <label for="sopho">Sophomore</label>
+        <fieldset>
+          <legend><strong>Educational Information</strong></legend>
+          <h5>Current academic year</h5>
 
-                
-                <input type="radio" id="jr" name="year">
-                <label for="jr">Junior</label>
+          <input type="radio" id="fresh" name="year" />
+          <label for="fresh">Freshman</label>
 
-                
-                <input type="radio" id="sr1" name="year">
-                <label for="sr1">Senior 1</label>
+          <input type="radio" id="sopho" name="year" />
+          <label for="sopho">Sophomore</label>
 
-               
-                <input type="radio" id="sr2" name="year">
-                <label for="sr2">Senior 2</label><br><br>
-                
-                <label for="trancript"><strong>Transcript of academic year 2024</strong></label><br><br>
-                <input type="file" accept=".pdf" required id="trancript" name="transcript">
+          <input type="radio" id="jr" name="year" />
+          <label for="jr">Junior</label>
 
-            </fieldset>
-            <div class="submission">
-                <label for="Agreement">I Agree to all terms and conditions</label>
-                <input type="checkbox" name="Agreement" id="Agreement">
-                <input type="submit" id="submit-btn">
-            </div>
-            
+          <input type="radio" id="sr1" name="year" />
+          <label for="sr1">Senior 1</label>
+
+          <input type="radio" id="sr2" name="year" />
+          <label for="sr2">Senior 2</label><br /><br />
+
+          <label for="trancript"
+            ><strong>Transcript of academic year 2024</strong></label
+          ><br /><br />
+          <input
+            type="file"
+            accept=".pdf"
+            required
+            id="trancript"
+            name="transcript"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Interests</legend>
+          <label for="favColor">Choose your favorite color:</label>
+          <input list="favColors" name="favColor" id="favColor" />
+
+          <datalist id="favColors">
+            <option value="Red"></option>
+            <option value="Blue"></option>
+            <option value="Purple"></option>
+            <option value="Green"></option>
+            <option value="Yellow"></option>
+          </datalist> <br>
+
+          <textarea name="hobbies" id="hobbies" placeholder="write briefly about your hobbies" cols="45" rows="6"></textarea>
+
+        </fieldset>
+        <div class="submission">
+          <label for="Agreement">I Agree to all terms and conditions</label>
+          <input type="checkbox" name="Agreement" id="Agreement" />
+          <input type="submit" id="submit-btn" />
         </div>
-       
+      </div>
     </form>
-</body>
+  </body>
 </html>

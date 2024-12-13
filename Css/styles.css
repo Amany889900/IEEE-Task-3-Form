@@ -9,7 +9,7 @@ form{
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
    
 }
@@ -37,7 +37,6 @@ h1{
     padding: 20px;
     color: rgb(48, 48, 125);
     font-family: 'Yesteryear';
-   
 }
 
 .submission{
@@ -52,5 +51,14 @@ h1{
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 15px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+i{
+    font-size: 50px;
+    color:rgb(48, 48, 125);;
 }
 
